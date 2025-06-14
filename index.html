@@ -16,9 +16,9 @@
     <p id="result"></p>
     <br>
 <button id="add" onclick="add()">Add</button>
-<button id="sub" onclick="add()">Subtract</button>
-<button id="mul" onclick="add()">Multiply</button>
-<button id="divide" onclick="add()">Divide</button>
+<button id="sub" onclick="subtract()">Subtract</button>
+<button id="mul" onclick="multiply()">Multiply</button>
+<button id="divide" onclick="divide()">Divide</button>
 <script>
     function add(){
         var result=Number(document.getElementById ("no1").value) +
@@ -28,23 +28,23 @@
         
     }
     function subtract(){
-        var result=Number(document.getElementById ("no1").value) -
+        var s=Number(document.getElementById ("no1").value) -
         Number(document.getElementById ("no2").value);
-        document.getElementById("result").innerHTML=result;
+        document.getElementById("result").innerHTML=s;
        
         
     }
     function multiply(){
-        var result=Number(document.getElementById ("no1").value) *
+        var m=Number(document.getElementById ("no1").value) *
         Number(document.getElementById ("no2").value);
-        document.getElementById("result").innerHTML=result;
+        document.getElementById("result").innerHTML=m;
        
         
     }
     function divide(){
-        var result=Number(document.getElementById ("no1").value) /
+        var d=Number(document.getElementById ("no1").value) /
         Number(document.getElementById ("no2").value);
-        document.getElementById("result").innerHTML=result;
+        document.getElementById("result").innerHTML=d;
        
         
     }
